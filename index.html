@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left_container">
+            <div>
+                <img src="images/MIIT_Logo.png">
+            </div>
+
+            <div class="welcome_msg">
+                <h1 class="welcome_h1">Welcome from<span class="welcome"></span></h1>
+                <h1 class="miit_h1">MIIT<span class="miit"></span></h1>
+            </div>
+        </div>
+
+        <div class="right_container">
+            <div class="html-form">
+                <h3>Registration Form</h3>
+                <form method="post" id="registration_form">
+                    <div class="flex-container">
+                        <div>
+                            <input type="text" id="firstName" placeholder="First Name">
+                            <div id="first-name-err"></div>
+                        </div>
+
+                        <div>
+                            <input type="text" id="lastName" placeholder="Last Name">
+                            <div id="last-name-err"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex-container">
+                        <div>
+                            <input type="email" id="emailAddress" placeholder="example@gmail.com">
+                            <div id="email-err"></div>
+                        </div>
+
+                        <div>
+                            <input type="text" id="mobileNumber" value="+95">
+                            <div id="mobile-number-err"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex-container">
+                        <div>
+                            <input type="password" id="password" placeholder="Password">
+                            <div id="password-err"></div>
+                        </div>
+
+                        <div>
+                            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                            <div id="confirm-password-err"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex-container">
+                        <input type="radio" id="radioMale" name="radioGender" value="male" checked>
+                        <label for="radioMale">Male</label>
+                    
+                        <input type="radio" id="radioFemale" name="radioGender" value="female">
+                        <label for="radioFemale">Female</label>
+        
+                    </div>
+
+                    <input type="submit">
+                    <input type="reset">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>
